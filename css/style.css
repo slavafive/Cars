@@ -123,8 +123,16 @@ li:last-child {
     /*background-size: cover;*/
 }
 
-
 .div-middle-left {
+    width: 60%;
+}
+
+.div-middle-left img {
+    width: 80%;
+    animation: moveInRight ease-in-out 3s;
+}
+
+.div-middle-right {
     width: 33%;
     /*background: linear-gradient(to right, var(--purple), var(--blue));*/
     border-radius: 30px 50px;
@@ -132,23 +140,26 @@ li:last-child {
     text-align: justify;
 }
 
-.div-middle-left h1 {
+.div-middle-right h1 {
     text-align: left;
     color: white;
     font-size: 35px;
 }
 
-.div-middle-left p {
+.div-middle-right p {
     color: white;
 }
 
-.div-middle-right {
-    width: 60%;
-}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px)
+    }
 
-.div-middle-right img {
-    width: 100%;
-    animation: moveInLeft ease-in-out 3s;
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
 }
 
 /*reviews*/
