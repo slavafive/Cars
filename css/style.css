@@ -1,7 +1,11 @@
 :root {
+    --first: #159be3;
+    --second: #1d10c4;
+
     --purple: #8832dd;
     --blue: #1c61d9;
     --dark: #21262f;
+    --yellow: #e3db15
 }
 
 /*top menu*/
@@ -33,11 +37,11 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(to right, var(--blue), var(--purple));
+    background: linear-gradient(to right, var(--second), var(--first));
 }
 
 nav li {
-    border: 0 solid var(--purple);
+    border: 0 solid var(--first);
     padding: 5px;
 }
 
@@ -66,19 +70,25 @@ li:last-child {
 
 /*wallpaper*/
 
+.div-main {
+    background-image: url("../images/16.jpg");
+    background-size: cover;
+}
+
 .div-top {
     display: flex;
-    height: 60vh;
+    height: 50vh;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url("../images/10.jpg");
+    /*background-image: url("../images/10.jpg");*/
 }
 
 .div-top-left {
     width: 33%;
-    border-radius: 30px 50px;
     padding: 10px 25px 15px 25px;
     text-align: justify;
+    background: linear-gradient(to right, var(--second), var(--first));
+    border-radius: 30px 50px;
 }
 
 .div-top-left h1 {
@@ -116,28 +126,28 @@ li:last-child {
 
 .div-middle {
     display: flex;
-    height: 60vh;
+    height: 50vh;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url("../images/10.jpg");
+    /*background-image: url("../images/10.jpg");*/
     /*background-size: cover;*/
 }
 
 .div-middle-left {
-    width: 60%;
+    width: 55%;
 }
 
 .div-middle-left img {
-    width: 80%;
+    width: 90%;
     animation: moveInRight ease-in-out 3s;
 }
 
 .div-middle-right {
-    width: 33%;
-    /*background: linear-gradient(to right, var(--purple), var(--blue));*/
-    border-radius: 30px 50px;
+    width: 40%;
     padding: 10px 25px 15px 25px;
     text-align: justify;
+    background: linear-gradient(to left, var(--second), var(--first));
+    border-radius: 30px 50px;
 }
 
 .div-middle-right h1 {
@@ -162,10 +172,54 @@ li:last-child {
     }
 }
 
+/*offers*/
+
+.div-offers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div-offers-child {
+
+}
+
+.div-offers-child-top {
+    width: 400px;
+    height: 400px;
+    border: 2px black solid;
+    /*background: linear-gradient(to top, var(--second), var(--first));*/
+}
+
+.div-offers-child-image {
+    width: 400px;
+    height: 170px;
+    border: 2px black solid;
+}
+
+.div-offers-child-bottom {
+    width: 400px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.div-offers-child-bottom-1 {
+    background-color: #d9b01c;
+}
+
+.div-offers-child-bottom-2 {
+    background-color: #d60d13;
+}
+
+.div-offers-child-bottom-3 {
+    background-color: #1c61d9;
+}
+
 /*reviews*/
 
 .div-heading {
     background-color: #1f65ff;
+    margin: 0;
 }
 
 .div-heading h1 {
@@ -173,7 +227,7 @@ li:last-child {
 }
 
 h1 {
-    color: var(--purple);
+    color: var(--first);
     margin: 10px 0 10px 50px;
     font-size: 35px;
 }
@@ -182,13 +236,14 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #000000;
+    background-color: #ffffff;
     padding: 20px;
-    background-image: url("../images/11.jpg");
+    /*background-image: url("../images/16.jpg");*/
+    background-size: cover;
 }
 
 .div-reviews-child {
-    background: linear-gradient(to right bottom, var(--purple), var(--blue));
+    background: linear-gradient(to right bottom, var(--first), var(--second));
     width: 300px;
     border-radius: 10%;
     color: white;
@@ -241,7 +296,7 @@ contacts.html
     display: inline-block;
     width: 100px;
     height: 100px;
-    background: linear-gradient(to right bottom, var(--purple), var(--blue));
+    background: linear-gradient(to right bottom, var(--first), var(--second));
     color: #ffffff;
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
