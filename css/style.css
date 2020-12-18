@@ -4,6 +4,7 @@
 
     --purple: #8832dd;
     --blue: #1c61d9;
+
     --dark: #21262f;
     --yellow: #e3db15
 }
@@ -232,6 +233,13 @@ h1 {
     font-size: 35px;
 }
 
+h6 {
+    color: var(--dark);
+    margin: 10px 0 10px 50px;
+    font-size: 14px;
+
+}
+
 .div-reviews {
     display: flex;
     flex-wrap: wrap;
@@ -280,16 +288,24 @@ contacts.html
     display: flex;
 }
 
+.mapContainer {
+    height: 600px;
+    width: 950px;
+    background-color: #8832dd;
+    margin-left: 50px;
+}
+
 .div-contacts-icons {
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .div-contacts-form {
     flex-grow: 3;
+    flex-direction: column;
 }
 
 .contact-btn {
@@ -316,3 +332,90 @@ contacts.html
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.decor {
+    position: relative;
+    max-width: 400px;
+    margin: 50px;
+    background: linear-gradient(to right, var(--second), var(--first));
+    border-radius: 30px;
+  }
+  .form-left-decoration,
+  .form-right-decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: white;
+    border-radius: 20px;
+  }
+  .form-left-decoration {
+    bottom: 60px;
+    left: -30px;
+  }
+  .form-right-decoration {
+    top: 60px;
+    right: -30px;
+  }
+  .form-left-decoration:before,
+  .form-left-decoration:after,
+  .form-right-decoration:before,
+  .form-right-decoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    
+  }
+  .form-left-decoration:before {top: -20px;}
+  .form-left-decoration:after {
+    top: 20px;
+    left: 10px;
+  }
+  .form-right-decoration:before {
+    top: -20px;
+    right: 0;
+  }
+  .form-right-decoration:after {
+    top: 20px;
+    right: 10px;
+  }
+  .circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+  }
+  .form-inner {padding: 50px;}
+  .form-inner input,
+  .form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: white;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .form-inner input[type="submit"] {
+    margin-top: 30px;
+    background: red;
+    border-bottom: 4px solid red;
+    color: white;
+    font-size: 14px;
+  }
+  .form-inner textarea {resize: none;}
+  .form-inner h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+  }

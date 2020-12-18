@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/script.js"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRYR0ST1vx5AVpUEdDqgziX7BGdFeLmvU&callback=initMap">
+    </script>
 </head>
 <body>
 
@@ -24,17 +28,33 @@
 
 <div class="contacts">
 
+    <div class="mapContainer" id="map">
+    </div>
+
     <div class="div-contacts-form">
-        <a></a>
+        <form class="decor">
+            <div class="form-left-decoration"></div>
+            <div class="form-right-decoration"></div>
+            <div class="circle"></div>
+            <div class="form-inner">
+              <h3>Написать нам</h3>
+              <input type="text" placeholder="Username">
+              <input type="email" placeholder="Email">
+              <textarea placeholder="Сообщение..." rows="3"></textarea>
+              <input type="submit" value="Отправить">
+            </div>
+          </form>
     </div>
 
-    <div class="div-contacts-icons">
-        <a href="https://www.facebook.com/profile.php?id=100013226141350" class="contact-btn"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/slavafive/" class="contact-btn"><i class="fab fa-instagram"></i></a>
-        <a href="https://vk.com/slavafive" class="contact-btn"><i class="fab fa-vk"></i></a>
-        <a href="https://t.me/slavafive" class="contact-btn"><i class="fab fa-telegram-plane"></i></a>
-    </div>
+</div>
 
+<h6>Мы распологаемся по адресу улица пушкина дом калатушкина</h6>
+
+<div class="div-contacts-icons">
+    <a href="https://www.facebook.com/profile.php?id=100013226141350" class="contact-btn"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/slavafive/" class="contact-btn"><i class="fab fa-instagram"></i></a>
+    <a href="https://vk.com/slavafive" class="contact-btn"><i class="fab fa-vk"></i></a>
+    <a href="https://t.me/slavafive" class="contact-btn"><i class="fab fa-telegram-plane"></i></a>
 </div>
 
 </body>
