@@ -1,8 +1,10 @@
 :root {
     --purple: #8832dd;
     --blue: #1c61d9;
+    --dark: #21262f;
 }
 
+/*top menu*/
 
 * {
     margin: 0;
@@ -15,6 +17,15 @@ body {
     padding: 0;
 }
 
+html, body {
+    width: 100%;
+    height:100%;
+}
+
+.div-nav {
+
+}
+
 nav {
     margin: 0;
 }
@@ -22,7 +33,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(to right, var(--purple), var(--blue));
+    background: linear-gradient(to right, var(--blue), var(--purple));
 }
 
 nav li {
@@ -33,6 +44,11 @@ nav li {
 nav li a {
     text-decoration: none;
     color: white;
+    font-size: 25px;
+}
+
+nav li a:hover {
+    font-weight: bold;
 }
 
 ul {
@@ -48,24 +64,124 @@ li:last-child {
     float: none;
 }
 
+/*wallpaper*/
+
+.div-top {
+    display: flex;
+    height: 60vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../images/10.jpg");
+}
+
+.div-top-left {
+    width: 33%;
+    border-radius: 30px 50px;
+    padding: 10px 25px 15px 25px;
+    text-align: justify;
+}
+
+.div-top-left h1 {
+    text-align: left;
+    color: white;
+    font-size: 35px;
+}
+
+.div-top-left p {
+    color: white;
+}
+
+.div-top-right {
+    width: 60%;
+}
+
+.div-top-right img {
+    width: 100%;
+    animation: moveInLeft ease-in-out 3s;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(200px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+/*offers*/
+
+.div-middle {
+    display: flex;
+    height: 60vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../images/10.jpg");
+    /*background-size: cover;*/
+}
+
+
+.div-middle-left {
+    width: 33%;
+    /*background: linear-gradient(to right, var(--purple), var(--blue));*/
+    border-radius: 30px 50px;
+    padding: 10px 25px 15px 25px;
+    text-align: justify;
+}
+
+.div-middle-left h1 {
+    text-align: left;
+    color: white;
+    font-size: 35px;
+}
+
+.div-middle-left p {
+    color: white;
+}
+
+.div-middle-right {
+    width: 60%;
+}
+
+.div-middle-right img {
+    width: 100%;
+    animation: moveInLeft ease-in-out 3s;
+}
+
+/*reviews*/
+
+.div-heading {
+    background-color: #1f65ff;
+}
+
+.div-heading h1 {
+    color: white;
+}
+
 h1 {
     color: var(--purple);
     margin: 10px 0 10px 50px;
+    font-size: 35px;
 }
 
 .div-reviews {
     display: flex;
     flex-wrap: wrap;
-    height: 30vh;
     justify-content: space-around;
+    background-color: #000000;
+    padding: 20px;
+    background-image: url("../images/11.jpg");
 }
 
 .div-reviews-child {
     background: linear-gradient(to right bottom, var(--purple), var(--blue));
-    width: 200px;
+    width: 300px;
     border-radius: 10%;
     color: white;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 6px 3px 3px #ddd;
 }
 
@@ -75,12 +191,12 @@ h1 {
 
 .div-reviews-child p {
     text-align: justify;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .div-reviews-child img {
     float: right;
-    width: 50px;
+    width: 80px;
     border-radius: 50%;
     border: 2px solid white;
     margin-left: 5px;
