@@ -178,23 +178,38 @@ li:last-child {
 .div-offers {
     display: flex;
     justify-content: space-evenly;
+    /*background-image: url("../images/32.jpg");*/
+    background-size: cover;
 }
 
-.div-offers-child {
+.div-offer-child {
+    padding: 40px 0 40px 0;
+}
 
+.div-offer-child h1{
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
 }
 
 .div-offers-child-top {
     width: 400px;
     height: 400px;
-    border: 2px black solid;
-    /*background: linear-gradient(to top, var(--second), var(--first));*/
+    border-radius: 10px;
+}
+
+.div-offers-child-top ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
 }
 
 .div-offers-child-image {
     width: 400px;
     height: 170px;
-    border: 2px black solid;
 }
 
 .div-offers-child-bottom {
@@ -202,35 +217,53 @@ li:last-child {
     font-size: 40px;
     color: white;
     text-align: center;
+    border-radius: 10px;
 }
 
-.div-offers-child-bottom-1 {
-    background-color: #d9b01c;
+.div-offer-child img {
+    animation: moveCarInRight 3s ease-in-out;
 }
 
-.div-offers-child-bottom-2 {
-    background-color: #d60d13;
+@keyframes moveCarInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
 }
 
-.div-offers-child-bottom-3 {
-    background-color: #1c61d9;
+.div-offers-child-1 {
+    background: linear-gradient(to bottom, #fff200, #dda71a);
+}
+
+.div-offers-child-2 {
+    background: linear-gradient(to bottom, #ec0964, #d20808);
+}
+
+.div-offers-child-3 {
+    background: linear-gradient(to bottom, var(--first), var(--second));
 }
 
 /*reviews*/
 
 .div-heading {
-    background-color: #1f65ff;
-    margin: 0;
+    background-color: #000000;
+    padding: 5px 0 5px 0;
 }
 
 .div-heading h1 {
     color: white;
 }
 
-h1 {
-    color: var(--first);
-    margin: 10px 0 10px 50px;
-    font-size: 35px;
+.heading {
+    color: white;
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+    text-align: center;
 }
 
 h6 {
@@ -289,8 +322,8 @@ contacts.html
 }
 
 .mapContainer {
-    height: 600px;
-    width: 950px;
+    height: 70vh;
+    width: 65vw;
     background-color: #8832dd;
     margin-left: 50px;
 }
