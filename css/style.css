@@ -1,0 +1,136 @@
+:root {
+    --purple: #8832dd;
+    --blue: #1c61d9;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Avenir';
+}
+
+body {
+    padding: 0;
+}
+
+nav {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right, var(--purple), var(--blue));
+}
+
+nav li {
+    border: 0 solid var(--purple);
+    padding: 5px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    float: left;
+}
+
+li:last-child {
+    float: none;
+}
+
+h1 {
+    color: var(--purple);
+    margin: 10px 0 10px 50px;
+}
+
+.div-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    justify-content: space-around;
+}
+
+.div-reviews-child {
+    background: linear-gradient(to right bottom, var(--purple), var(--blue));
+    width: 200px;
+    border-radius: 10%;
+    color: white;
+    padding: 10px;
+    box-shadow: 6px 3px 3px #ddd;
+}
+
+.div-reviews-child hr {
+    margin: 5px 0 5px 0;
+}
+
+.div-reviews-child p {
+    text-align: justify;
+    font-size: 13px;
+}
+
+.div-reviews-child img {
+    float: right;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 5px;
+}
+
+.div-reviews-child:hover {
+    transform: scale(1.03);
+}
+
+/*
+contacts.html
+*/
+
+.contacts {
+    display: flex;
+}
+
+.div-contacts-icons {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.div-contacts-form {
+    flex-grow: 3;
+}
+
+.contact-btn {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right bottom, var(--purple), var(--blue));
+    color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contact-btn:hover {
+    transform: scale(1.04);
+}
+
+.contact-btn i {
+    line-height: 100px;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
