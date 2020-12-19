@@ -76,7 +76,7 @@ li:last-child {
     background-size: cover;
 }
 
-.car-block {
+.div-top {
     display: flex;
     height: 50vh;
     justify-content: space-evenly;
