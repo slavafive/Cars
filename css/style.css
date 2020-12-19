@@ -197,14 +197,31 @@ li:last-child {
     width: 400px;
     height: 400px;
     border-radius: 10px;
+    color: white;
+}
+
+hr {
+    border: 1px white solid;
+}
+
+.div-offers-child-top ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-offers-child-top ul {
+    list-style: none;
+}
+
+.div-offers-child-top ul li {
+    text-align: left;
 }
 
 .div-offers-child-top ul li::before {
-    content: "\2022";
-    color: red;
-    font-weight: bold;
-    display: inline-block;
+    content: "\2022"; /*►*/
+    color: white;
     width: 1em;
+    margin: 0 10px 0 10px;
 }
 
 .div-offers-child-image {
@@ -224,15 +241,20 @@ li:last-child {
     animation: moveCarInRight 3s ease-in-out;
 }
 
+.div-offer-child p {
+    /*font-size: 20px;*/
+    color: white;
+    padding: 10px;
+    text-align: justify;
+}
+
 @keyframes moveCarInRight {
     0% {
         opacity: 0;
-        transform: translateX(-500px);
     }
 
     100% {
         opacity: 1;
-        transform: translate(0)
     }
 }
 
