@@ -123,6 +123,18 @@ li:last-child {
     }
 }
 
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
 /*bestsellers*/
 
 .div-middle {
@@ -235,16 +247,6 @@ hr {
     text-align: justify;
 }
 
-@keyframes moveCarInRight {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 .div-bestsellers-child-1 {
     background: linear-gradient(to bottom, #fff200, #dda71a);
 }
@@ -269,12 +271,6 @@ hr {
     font-size: 30px;
     margin: 5px 0 5px 0;
     text-align: center;
-}
-
-h6 {
-    color: var(--dark);
-    margin: 10px 0 10px 50px;
-    font-size: 14px;
 }
 
 .div-reviews {
@@ -357,6 +353,18 @@ contacts.html
 
 .contacts {
     display: flex;
+}
+
+.contactsTitle {
+    color: var(--second);
+    margin: 10px 0 10px 50px;
+    font-size: 32px;
+}
+
+.contactsDescr {
+    color: var(--dark);
+    margin: 10px 0 10px 50px;
+    font-size: 14px;
 }
 
 .mapContainer {
@@ -490,3 +498,45 @@ contacts.html
     margin-bottom: 10px;
     color: white;
   }
+
+  /* Product */
+.productsBackground {
+    background: linear-gradient(to right bottom, black, rgb(97, 83, 83));
+}
+
+.productTextBox {
+    max-width: 40%;
+    max-height: auto;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(to right, var(--second), var(--first));
+    padding: 10px;
+    margin: 10px;
+}
+
+.div-left-picture img {
+    width: 100%;
+    animation: moveInRight ease-in-out 3s;
+}
+
+.div-right-picture img {
+    width: 100%;
+    animation: moveInLeft ease-in-out 3s;
+}
+
+.productTextBox ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.productTextBox ul li {
+    text-align: left;
+}
+
+.productTextBox ul li::before {
+    content: "\2022"; /*►*/
+    color: white;
+    width: 1em;
+    margin: 0 10px 0 10px;
+}
