@@ -184,6 +184,10 @@ li:last-child {
     padding: 40px 0 40px 0;
 }
 
+.div-bestsellers-child div {
+    box-shadow: 1px 1px 1px #ddd;
+}
+
 .div-bestsellers-child h1 {
     color: white;
     margin: 0;
@@ -356,12 +360,19 @@ Special offer
 contacts.html
 */
 
+.div-contacts-background {
+    height: 100vh;
+    padding: 20px;
+    background-image: url("../images/16.jpg");
+    background-size: cover;
+}
+
 .contacts {
     display: flex;
 }
 
 .contactsTitle {
-    color: var(--second);
+    color: white;
     margin: 10px 0 10px 50px;
     font-size: 32px;
 }
